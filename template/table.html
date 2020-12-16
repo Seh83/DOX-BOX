@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlaskDrive</title>
+  </head>
+  <body>
+    <div class="content">
+      <div>
+        <ul>
+          {% for item in contents %}
+          <li>{{ item.Text }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

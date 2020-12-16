@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div class="content">
+      <h3>DOCUMENT CLASSIFIED & UPLOADED</h3>
+
+      <div>
+        <ol>
+          {% for item in total %}
+          <li>
+            <h2>
+              <b>File <span style="color: blue">{{ item.name }}</span></b> is
+              classified as --
+              <b><span style="color: red">{{item.class}}</span></b>
+            </h2>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+    <div>
+      <button style="width: 200px; height: 50px"><a href="/storage">Go TO Doc Box</a></button>
+    </div>
+  </body>
+</html>

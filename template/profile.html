@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Picture</title>
+  </head>
+  <body>
+    <div class="content">
+      {% for item in contents %}
+      <img src="{{ item.Key }}" />
+      {% endfor %}
+    </div>
+  </body>
+</html>
